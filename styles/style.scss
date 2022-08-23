@@ -1,0 +1,122 @@
+@import './colors/colors.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    outline: 0;
+    color: $textColor;
+    li{
+        list-style: none;
+    }  
+    a{
+        text-decoration: none;
+    }
+}
+body{
+    // width: 100vw;
+    overflow-x: hidden !important;
+    background-color: $backGroundColor;
+    .h1{
+        font-size: 2rem;
+        padding: 10px;
+    }
+    .container{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        // border: 1px solid;
+
+        .styleContainer{
+            width: 100%;
+            .style{
+                padding: 10px;
+                font-size: 1rem;
+            }
+        }
+        .collection{
+            // border: 1px solid;
+            display: flex;
+            flex-direction: row;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            position: relative;
+
+            .left, .right{
+                position: absolute;
+                border: 1px solid $backGroundColorArrow;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                padding: 5px;
+                color: $textColorArrow;
+                background-color: $backGroundColorArrow;
+            }
+            .left:hover, .right:hover{
+                background-color: $backGroundColorArrowHover;
+                color: $textColorArrowHover;
+            }
+            .left{
+                left: -20px;
+            }
+            .right{
+                right: 0;
+            }
+            
+            .cdPai{
+                margin-right: 10px;
+                padding: 5px;
+                border-radius: 5px;
+                background-color: $backGroundColorCd;
+                box-shadow: 2px 2px 2px $borderColorCd;
+
+                .cd{
+                    width: 80px;
+                    .image{
+                        width: 100%;
+                        top: 0;
+                        left: 0;
+    
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .paiSinger{
+                        width: 100%;
+                        position: relative;
+
+                        .singer{
+                            text-align: center;
+                            margin: 5px 0 5px 0;
+                            width: 100%;
+                            font-size: 0.5rem;
+                        }
+                        .play{
+                            border: 1px solid;
+                            font-size: 0.7rem;
+                            padding: 10px;
+                            margin: 2px 0 8px 0;
+                            text-align: center;
+                            border-radius: 5px;
+                            color: aliceblue;
+                        }
+                        .play:hover{
+                            opacity: 0.5;
+                            background-color: green;
+                            cursor: pointer;
+                        }
+                        .play:active{
+                            transform: scale(0.98);
+                        }
+                        .musics{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

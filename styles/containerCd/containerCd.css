@@ -1,0 +1,30 @@
+.containerCd {
+  background-color: #121212;
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.containerCd .image {
+  width: 80%;
+  margin: 40px auto;
+}
+.containerCd .image .img {
+  width: 100%;
+}
+.containerCd .containerMusics {
+  display: flex;
+  flex-direction: column;
+  background-color: #121212;
+}
+.containerCd .containerMusics .button {
+  width: 80%;
+  margin: 3px auto;
+  padding: 10px;
+  color: black;
+  text-align: left;
+}/*# sourceMappingURL=containerCd.css.map */

@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  outline: 0;
+  color: rgb(255, 255, 255);
+}
+* li {
+  list-style: none;
+}
+* a {
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden !important;
+  background-color: #121212;
+}
+body .h1 {
+  font-size: 2rem;
+  padding: 10px;
+}
+body .container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+body .container .styleContainer {
+  width: 100%;
+}
+body .container .styleContainer .style {
+  padding: 10px;
+  font-size: 1rem;
+}
+body .container .collection {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  position: relative;
+}
+body .container .collection .left, body .container .collection .right {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.253);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  color: rgba(255, 255, 255, 0.253);
+  background-color: rgba(255, 255, 255, 0.253);
+}
+body .container .collection .left:hover, body .container .collection .right:hover {
+  background-color: #fff;
+  color: black;
+}
+body .container .collection .left {
+  left: -20px;
+}
+body .container .collection .right {
+  right: 0;
+}
+body .container .collection .cdPai {
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #282828;
+  box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.301);
+}
+body .container .collection .cdPai .cd {
+  width: 80px;
+}
+body .container .collection .cdPai .cd .image {
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+body .container .collection .cdPai .cd .image img {
+  width: 100%;
+  height: 100%;
+}
+body .container .collection .cdPai .cd .paiSinger {
+  width: 100%;
+  position: relative;
+}
+body .container .collection .cdPai .cd .paiSinger .singer {
+  text-align: center;
+  margin: 5px 0 5px 0;
+  width: 100%;
+  font-size: 0.5rem;
+}
+body .container .collection .cdPai .cd .paiSinger .play {
+  border: 1px solid;
+  font-size: 0.7rem;
+  padding: 10px;
+  margin: 2px 0 8px 0;
+  text-align: center;
+  border-radius: 5px;
+  color: aliceblue;
+}
+body .container .collection .cdPai .cd .paiSinger .play:hover {
+  opacity: 0.5;
+  background-color: green;
+  cursor: pointer;
+}
+body .container .collection .cdPai .cd .paiSinger .play:active {
+  transform: scale(0.98);
+}
+body .container .collection .cdPai .cd .paiSinger .musics {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
