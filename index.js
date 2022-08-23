@@ -13,6 +13,7 @@ function init() {
 
     creatHtml()
     chooseMusic()
+    nextWindow()
 }
 
 function creatHtml() {
@@ -84,8 +85,8 @@ function creatHtml() {
         containerElement.appendChild(containerStyleElement)
         containerElement.appendChild(collectionElement)                
         
-        collectionElement.appendChild(arrowLeft)
-        collectionElement.appendChild(arrowRight)
+        containerElement.appendChild(arrowLeft)
+        containerElement.appendChild(arrowRight)
         
         containerStyleElement.appendChild(h2Element)
     }
@@ -162,5 +163,24 @@ function playCd(openCd) {
     containerCdElement.appendChild(containerImagem)
     containerImagem.appendChild(image)
     containerCdElement.appendChild(containerMusicsElement)    
+}
+
+function nextWindow() {
+    let allRight = document.querySelectorAll('.right')
+
+    allRight.forEach(right => {
+        
+        right.addEventListener('click', () => {
+
+            let allContainer = document.querySelectorAll(".container")
+
+            allContainer.forEach(container => {
+                
+                container.classList.remove('container')
+
+            })
+        })
+    });
+
 }
 
