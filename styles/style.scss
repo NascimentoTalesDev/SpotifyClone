@@ -1,9 +1,15 @@
 @import './colors/colors.scss';
 
+// @font-face {
+//     font-family: "Dentanx";
+//     src: url("../font/Dentanx.ttf") format("truetype");
+// }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    // font-family: "Dentanx";
     font-family: 'Courier New', Courier, monospace;
     outline: 0;
     color: $textColor;
@@ -21,6 +27,9 @@ body{
     .h1{
         font-size: 2rem;
         padding: 10px;
+        text-align: center;
+        margin: 20px 0 10px 0px;
+        font-weight: bold;
     }
     .container{
         width: 100vw; 
@@ -37,13 +46,8 @@ body{
             }
         }
         .collection{
-            // border: 1px solid;
             display: flex;
-            // background-color: brown;
-            
             align-items: center;
-            padding: 10px 0;
-            height: 25vh;
             flex-direction: row;
             margin-left: 20px;
             margin-bottom: 10px;
@@ -52,7 +56,7 @@ body{
 
             .cdPai{
                 margin: 5px;
-                padding-top: 1.5rem;
+                // padding-top: 1.5rem;
                 height: 20vh;
                 max-width: 25vw;
                 display: flex;
@@ -65,6 +69,7 @@ body{
                     width: 80px;
                     padding: 0.3rem;
                     padding-top: 0.6rem;
+
                     .image{
                         width: 100%;
                         top: 0;
@@ -113,12 +118,12 @@ body{
         .left, .right{
             position: absolute;
             border: 1px solid $backGroundColorArrow;
-            height: 70%;
+            height: 72%;
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 5px;
-            margin-top: 3rem;
+            margin-top: 2.6rem;
             color: $textColorArrow;
             background-color: $backGroundColorArrow;
         }
@@ -127,16 +132,14 @@ body{
             color: $textColorArrowHover;
         }
         .left{
-            // left: -20px;
+            left: 0;
 
         }
         .right{
             right: 0;
-            // float: right;
         }
         .collection::-webkit-scrollbar{
             width: 0;
         }
-    }
-    
+    }    
 }

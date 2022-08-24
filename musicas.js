@@ -52,8 +52,8 @@ const datas = [
                     "Oi Sumido - EP Aqui Em Casa",
                     "Quase Tudo - Agora é que são elas 2",
                     "Se Olha No Espelho (part. Cristiano Araújo) [Ao Vivo em Goiânia]",
-                    "Separada - DVD Reflexo",
-                    "Traí sim part. Zé Neto e Cristiano - DVD Reflexo"
+                    "Traí sim part. Zé Neto e Cristiano - DVD Reflexo",
+                    "Separada - DVD Reflexo"
                 ],
             },
             ,

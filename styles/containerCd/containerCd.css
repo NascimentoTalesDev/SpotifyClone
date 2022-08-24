@@ -1,7 +1,6 @@
 .containerCd {
   background-color: #121212;
-  height: 100%;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -10,7 +9,7 @@
   z-index: 1000;
 }
 .containerCd .image {
-  width: 80%;
+  width: 15rem;
   margin: 40px auto;
 }
 .containerCd .image .img {
@@ -20,6 +19,8 @@
   display: flex;
   flex-direction: column;
   background-color: #121212;
+  padding: 10px 0 20px 0;
+  width: 100%;
 }
 .containerCd .containerMusics .button {
   width: 80%;
@@ -27,4 +28,13 @@
   padding: 10px;
   color: black;
   text-align: left;
+  border: none;
+  height: 3rem;
+  transition: scale 0.2s;
+}
+.containerCd .containerMusics .button:active {
+  scale: 1.2;
+}
+.containerCd .containerMusics .button:focus {
+  background-color: rgb(103, 255, 2);
 }/*# sourceMappingURL=containerCd.css.map */

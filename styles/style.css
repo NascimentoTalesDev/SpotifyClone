@@ -20,6 +20,9 @@ body {
 body .h1 {
   font-size: 2rem;
   padding: 10px;
+  text-align: center;
+  margin: 20px 0 10px 0px;
+  font-weight: bold;
 }
 body .container {
   width: 100vw;
@@ -37,8 +40,6 @@ body .container .styleContainer .style {
 body .container .collection {
   display: flex;
   align-items: center;
-  padding: 10px 0;
-  height: 25vh;
   flex-direction: row;
   margin-left: 20px;
   margin-bottom: 10px;
@@ -47,7 +48,6 @@ body .container .collection {
 }
 body .container .collection .cdPai {
   margin: 5px;
-  padding-top: 1.5rem;
   height: 20vh;
   max-width: 25vw;
   display: flex;
@@ -103,18 +103,21 @@ body .container .collection .cdPai .cd .paiSinger .musics {
 body .container .left, body .container .right {
   position: absolute;
   border: 1px solid rgba(255, 255, 255, 0.253);
-  height: 70%;
+  height: 72%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 5px;
-  margin-top: 3rem;
+  margin-top: 2.6rem;
   color: rgba(255, 255, 255, 0.253);
   background-color: rgba(255, 255, 255, 0.253);
 }
 body .container .left:hover, body .container .right:hover {
   background-color: #fff;
   color: black;
+}
+body .container .left {
+  left: 0;
 }
 body .container .right {
   right: 0;

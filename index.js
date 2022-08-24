@@ -95,6 +95,7 @@ function creatHtml() {
 function chooseMusic() {
     
     let cds = document.querySelectorAll('.play')
+    
 
     cds.forEach(cd => {
         cd.addEventListener('click', (e) =>{
@@ -127,9 +128,12 @@ function playCd(openCd) {
     const containerMusicsElement = document.createElement('div')
     containerMusicsElement.classList.add('containerMusics')
 
+
     for (let index = 0; index < arrayAudios[0].length; index++) {
        
+
         arrayAudios.forEach(audio => {
+            
 
             const button = document.createElement('button')
             button.classList.add('button')
@@ -137,7 +141,6 @@ function playCd(openCd) {
             button.id = audio[index]
             
             containerMusicsElement.appendChild(button)
-
 
             button.addEventListener("click", () =>{
                 let play = document.getElementById(audio[index]);
@@ -165,22 +168,22 @@ function playCd(openCd) {
     containerCdElement.appendChild(containerMusicsElement)    
 }
 
-function nextWindow() {
-    let allRight = document.querySelectorAll('.right')
+// function nextWindow() {
+//     let allRight = document.querySelectorAll('.right')
 
-    allRight.forEach(right => {
+//     allRight.forEach(right => {
         
-        right.addEventListener('click', () => {
+//         right.addEventListener('click', () => {
 
-            let allContainer = document.querySelectorAll(".container")
+//             let allContainer = document.querySelectorAll(".container")
 
-            allContainer.forEach(container => {
+//             allContainer.forEach(container => {
                 
-                container.classList.remove('container')
+//                 container.classList.remove('container')
 
-            })
-        })
-    });
+//             })
+//         })
+//     });
 
-}
+// }
 
