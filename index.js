@@ -125,12 +125,18 @@ function playCd(openCd) {
 
     let audio = openCd[2].querySelector('input').value
 
+    let singerName = openCd[2].querySelectorAll('.singer')
+    
     let arrayAudios = []
 
     arrayAudios.push(audio.split(","))
     
     const containerCdElement = document.createElement('div')
     containerCdElement.classList.add('containerCd')
+
+    const close = document.createElement('i')
+    close.classList.add('fas')
+    close.classList.add('fa-chevron-down')
 
     const containerImagem = document.createElement('div')
     containerImagem.classList.add('image')
@@ -143,14 +149,13 @@ function playCd(openCd) {
     containerMusicsElement.classList.add('containerMusics')
 
     for (let index = 0; index < arrayAudios[0].length; index++) {
-       
+
         arrayAudios.forEach(audio => {
-            
             const button = document.createElement('button')
             button.classList.add('button')
-            button.innerHTML = audio[index]
+            button.innerHTML = `${audio[index]} <br> ${singerName[0].innerHTML}`
             button.id = audio[index]
-            
+
             containerMusicsElement.appendChild(button)
 
             button.addEventListener("click", () =>{
@@ -161,22 +166,31 @@ function playCd(openCd) {
             })
 
             function stopMusics() {
-
                 let audios = document.querySelectorAll('audio')
                 audios.forEach(audio=>{
                     audio.pause()
                     audio.currentTime = 0
-
                 })
             }
         });
     }
     
+    // console.log();
+
     body.appendChild(containerCdElement)
+    containerCdElement.appendChild(close)
     containerCdElement.appendChild(containerImagem)
     containerImagem.appendChild(image)
     containerCdElement.appendChild(containerMusicsElement)   
     
+    
+
+    close.addEventListener('click', () => {
+        containerCdElement.classList.toggle('close')
+        
+        // window.location.reload()
+        
+    })
 }
 
 

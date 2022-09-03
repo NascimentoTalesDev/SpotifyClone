@@ -14,8 +14,8 @@
 }
 
 body {
-  overflow-x: hidden !important;
   background-color: #121212;
+  width: 100vw;
 }
 body .title {
   display: flex;
@@ -40,7 +40,7 @@ body .title .figure i {
   margin-left: 1rem;
 }
 body .container {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   position: relative;
