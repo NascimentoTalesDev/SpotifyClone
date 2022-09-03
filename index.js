@@ -1,19 +1,45 @@
 const body = document.querySelector('body')
 body.style.overflowX = "hidden"
 
-
 init()
 
 function init() {
+
+    creatTitle()
+}
+function creatTitle() {
+
+    const containerTitle = document.createElement('div')
+    containerTitle.classList.add('title')
     const h1 = document.createElement('h1')
+
+    const containerfigure = document.createElement('div')
+    containerfigure.classList.add('figure')
+
+    const sino = document.createElement('i')
+    sino.classList.add('fas')
+    sino.classList.add('fa-bell')
+
+    const time = document.createElement('i')
+    time.classList.add('fas')
+    time.classList.add('fa-clock')
+
+    const config = document.createElement('i')
+    config.classList.add('fas')
+    config.classList.add('fa-gear')
+    
     h1.classList.add('h1')
     h1.innerHTML = "Spotify"
 
-    body.appendChild(h1)
+    body.appendChild(containerTitle)
+    containerTitle.appendChild(h1)
+    containerTitle.appendChild(containerfigure)
+
+    containerfigure.appendChild(sino)
+    containerfigure.appendChild(time)
+    containerfigure.appendChild(config)
 
     creatHtml()
-    chooseMusic()
-    nextWindow()
 }
 
 function creatHtml() {
@@ -32,16 +58,6 @@ function creatHtml() {
 
         const collectionElement = document.createElement('div')
         collectionElement.classList.add('collection')
-
-        const arrowLeft = document.createElement('i')
-        arrowLeft.classList.add('fa-solid')
-        arrowLeft.classList.add('fa-angle-left')
-        arrowLeft.classList.add('left')
-
-        const arrowRight = document.createElement('i')
-        arrowRight.classList.add('fa-solid')
-        arrowRight.classList.add('fa-angle-right')
-        arrowRight.classList.add('right')
     
         datas[index].songs.forEach(song => {
 
@@ -84,19 +100,17 @@ function creatHtml() {
         body.appendChild(containerElement)
         containerElement.appendChild(containerStyleElement)
         containerElement.appendChild(collectionElement)                
-        
-        containerElement.appendChild(arrowLeft)
-        containerElement.appendChild(arrowRight)
-        
+                
         containerStyleElement.appendChild(h2Element)
     }
+
+    chooseMusic()
 }
 
 function chooseMusic() {
     
     let cds = document.querySelectorAll('.play')
     
-
     cds.forEach(cd => {
         cd.addEventListener('click', (e) =>{
             let openCd = e.composedPath();
@@ -128,13 +142,10 @@ function playCd(openCd) {
     const containerMusicsElement = document.createElement('div')
     containerMusicsElement.classList.add('containerMusics')
 
-
     for (let index = 0; index < arrayAudios[0].length; index++) {
        
-
         arrayAudios.forEach(audio => {
             
-
             const button = document.createElement('button')
             button.classList.add('button')
             button.innerHTML = audio[index]
@@ -161,29 +172,11 @@ function playCd(openCd) {
         });
     }
     
-
     body.appendChild(containerCdElement)
     containerCdElement.appendChild(containerImagem)
     containerImagem.appendChild(image)
-    containerCdElement.appendChild(containerMusicsElement)    
+    containerCdElement.appendChild(containerMusicsElement)   
+    
 }
 
-// function nextWindow() {
-//     let allRight = document.querySelectorAll('.right')
-
-//     allRight.forEach(right => {
-        
-//         right.addEventListener('click', () => {
-
-//             let allContainer = document.querySelectorAll(".container")
-
-//             allContainer.forEach(container => {
-                
-//                 container.classList.remove('container')
-
-//             })
-//         })
-//     });
-
-// }
 

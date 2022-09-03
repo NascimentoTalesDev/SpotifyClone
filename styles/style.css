@@ -17,12 +17,27 @@ body {
   overflow-x: hidden !important;
   background-color: #121212;
 }
-body .h1 {
+body .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0.5rem;
+}
+body .title .h1 {
   font-size: 2rem;
   padding: 10px;
   text-align: center;
   margin: 20px 0 10px 0px;
   font-weight: bold;
+}
+body .title .figure {
+  display: flex;
+  justify-content: center;
+  margin-right: 1rem;
+}
+body .title .figure i {
+  font-size: 1.2rem;
+  margin-left: 1rem;
 }
 body .container {
   width: 100vw;
@@ -41,25 +56,24 @@ body .container .collection {
   display: flex;
   align-items: center;
   flex-direction: row;
-  margin-left: 20px;
+  margin-left: 1rem;
   margin-bottom: 10px;
   position: relative;
   overflow-x: scroll;
+  overflow-y: hidden;
+  height: 20vh;
 }
 body .container .collection .cdPai {
-  margin: 5px;
-  height: 20vh;
-  max-width: 25vw;
-  display: flex;
-  justify-content: center;
+  margin-right: 0.5rem;
+  height: 100%;
   border-radius: 5px;
   background-color: #282828;
   box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.301);
 }
 body .container .collection .cdPai .cd {
-  width: 80px;
+  width: 5rem;
   padding: 0.3rem;
-  padding-top: 0.6rem;
+  height: 100%;
 }
 body .container .collection .cdPai .cd .image {
   width: 100%;
