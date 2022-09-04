@@ -34,6 +34,144 @@ const datas = [
                     "Tchau Tchau Amor"
                 ],
             },
+            {
+                "cantor": "Tierry",
+                "thumb": "thumbs/arrocha/tierry-role-de-milhoes.webp",
+                "play" : "Play",
+                "musicas" : [
+                    "Porque Bebi",
+                    "Pai É Quem Cria",
+                    "Diabinha",
+                    "Ainda Tô Pagando",
+                    "Me Apaixonei Me Apeguei",
+                    "Revoei"
+                ],
+            },
+            
+        ]
+    },
+    {
+        "style": "Forró",
+        "songs" : [
+            {
+                "cantor": "Calcinha Preta",
+                "thumb": "thumbs/forro/calcinha-preta-belem.webp",
+                "play" : "Play",
+                "musicas" : [
+                    "Abelha Que Virou Anjo",
+                    "A Calcinha É Nossa",
+                    "Cobertor",
+                    "Manchete Nos Jornais",
+                    "Louca Por Ti",
+                    "E O Vento Levou",
+                    "Um Degrau Na Escada",
+                    "Faço Chover",
+                    "Mágica",
+                    "Te Acho Tão Linda",
+                    "Seu Namorado",
+                    "Hoje A Noite",
+                    "Armadilha",
+                    "Babydoll",
+                    "Por Amor O Que É Que Eu Vou Fazer",
+                    "Ja Me Acostumei",
+                    "Não Me Deixe Agora",
+                    "Ainda Te Amo",
+                    "O Navio E O Mar",
+                    "Liga Pra Mim",
+                    "Novo Namorado",
+                    "Fica Comigo",
+                    "Furunfa Te Quero Namorar"
+                ],
+            },
+        ]
+    },
+    {
+        "style": "Hip Hop / Rap",
+        "songs" : [
+            {
+                "cantor": "Hungria Hip Hop",
+                "thumb": "thumbs/hip hop_rap/hungria-hip-hop.jpg",
+                "play" : "Play",
+                "musicas" : [
+                    "Beijo Com Trap",
+                    "Coração De Aço",
+                    "Lembranças",
+                    "Primeiro Milhão",
+                    "Um Pedido",
+                    "Carruagem",
+                    "Detalhes",
+                    "Astronauta",
+                    "Garota E Diamante",
+                    "Dubai",
+                    "Não Tenho Freio",
+                    "De Aro 20",
+                    "Fumaça",
+                    "O Playboy Rodou",
+                    "Apaga A Luz",
+                    "Cama De Casal",
+                    "Insônia"
+                ],
+            },
+        ]
+    },
+    {
+        "style": "Pagode",
+        "songs" : [
+            {
+                "cantor": "Péricles",
+                "thumb": "thumbs/pagode/pericles-acustico.webp",
+                "play" : "Play",
+                "musicas" : [
+                    "Linguagem Dos Olhos",
+                    "Se Eu Largar O Freio",
+                    "Jogo De Sedução",
+                    "Eu E Você Sempre",
+                    "Melhor Eu Ir"
+                ],
+            },
+            {
+                "cantor": "Pixote",
+                "thumb": "thumbs/pagode/pixote-chiclete.jpg",
+                "play" : "Play",
+                "musicas" : [
+                    "Ele E Ela",
+                    "Adeus",
+                    "Belisca",
+                    "Chiclete",
+                    "Você Ta No Celular",
+                    "Só A Lua"
+                ],
+            },
+            
+        ]
+    },
+    {
+        "style": "Romântico",
+        "songs" : [
+            {
+                "cantor": "Nivaldo Marques",
+                "thumb": "thumbs/romantico/nivaldo-marques-pra-bailar.webp",
+                "play" : "Play",
+                "musicas" : [
+                    "Tomar Uma Na Zona",
+                    "Acorda Pedrinho",
+                    "Morena Com o Corpo Bronzeado",
+                    "Ela É Problemática",
+                    "Tem Cabaré Essa Noite",
+                    "Malhado E Gostoso",
+                    "Não Pega Ninguém Ainda",
+                    "Revoada",
+                    "Ui Ai",
+                    "Balanço Da Rede",
+                    "Capa Do Celular",
+                    "Desce Com O Dedo Na Boca",
+                    "Malandrinha",
+                    "Fim De Semana",
+                    "Louca Magia",
+                    "O Que Será De Nós",
+                    "Devolva Meu Coração"
+                ],
+            },
             
         ]
     },
