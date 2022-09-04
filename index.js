@@ -160,7 +160,7 @@ function playCd(openCd) {
 
             button.addEventListener("click", () =>{
                 let play = document.getElementById(audio[index]);
-
+                console.log(play);
                 stopMusics();
                 play.play()
             })
@@ -170,6 +170,7 @@ function playCd(openCd) {
                 audios.forEach(audio=>{
                     audio.pause()
                     audio.currentTime = 0
+
                 })
             }
         });
@@ -183,14 +184,15 @@ function playCd(openCd) {
     containerImagem.appendChild(image)
     containerCdElement.appendChild(containerMusicsElement)   
     
-    
-
     close.addEventListener('click', () => {
         containerCdElement.classList.toggle('close')
-        
-        // window.location.reload()
-        
     })
 }
 
+let search = document.getElementById('search')
+search.addEventListener('click', () => {
+    let searchContainer = document.querySelector('.search')
+    console.log(searchContainer);
+    searchContainer.classList.toggle('on')
+})
 

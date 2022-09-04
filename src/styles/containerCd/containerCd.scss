@@ -6,11 +6,12 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
+    overflow-y: scroll;
     height: 100%;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 100;
     transition: top 0.5s ease-in-out;
     i{
         position: absolute;
@@ -27,10 +28,9 @@
     .containerMusics{
         display: flex;
         flex-direction: column;
-        background-color: $backGroundColor;
         padding: 10px 0 20px 0;
         width: 100%;
-
+        margin-bottom: 10rem;
         .button{
             width: 80%;
             margin: 3px auto;
@@ -50,23 +50,38 @@
     }
 }
 .close{
-    top: 80vh;
-    height: 20vh;
+    top: 85vh;
+    height: 10vh;
     display: flex;
     flex-direction: row;
-
+    align-items: center;
+    position: fixed;
+    overflow-y: hidden;
+    transform: display 10s;
+    z-index: 10000;
+    background-color: $backGroundColor;
     .image{
-        width: 8rem;
-        position: absolute;
-        padding: 1rem;
-        margin-left: 30%;
+        width: 5rem;
+        // margin-left: 30%;
         .img{
             width: 100%;
+            border-radius: 50%;
+            animation: tocar 11110s infinite;
         }
     }
     .containerMusics{
+        transform: display 10s;
         display: none;
+
     }    
+}
+@keyframes tocar {
+    0%{
+        transform: rotate(0) ;
+
+    }100%{
+        transform: rotate(3585660deg) ;
+    }
 }
 
 
