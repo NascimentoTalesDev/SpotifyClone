@@ -4,7 +4,7 @@ const datas = [
         "songs" : [
             {
                 "cantor": "Pablo e Assas Livres",
-                "thumb": "thumbs/arrocha/asas-livres-pablo-e-asas-livres-retro.webp",
+                "thumb": "./src/thumbs/arrocha/asas-livres-pablo-e-asas-livres-retro.webp",
                 "play" : "Play",
                 "musicas" : [
                     "Tudo Azul",
@@ -36,7 +36,7 @@ const datas = [
             },
             {
                 "cantor": "Tierry",
-                "thumb": "thumbs/arrocha/tierry-role-de-milhoes.webp",
+                "thumb": "./src/thumbs/arrocha/tierry-role-de-milhoes.webp",
                 "play" : "Play",
                 "musicas" : [
                     "Porque Bebi",
@@ -55,7 +55,7 @@ const datas = [
         "songs" : [
             {
                 "cantor": "Calcinha Preta",
-                "thumb": "thumbs/forro/calcinha-preta-belem.webp",
+                "thumb": "./src/thumbs/forro/calcinha-preta-belem.webp",
                 "play" : "Play",
                 "musicas" : [
                     "Abelha Que Virou Anjo",
@@ -90,7 +90,7 @@ const datas = [
         "songs" : [
             {
                 "cantor": "Hungria Hip Hop",
-                "thumb": "thumbs/hip hop_rap/hungria-hip-hop.jpg",
+                "thumb": "./src/thumbs/hip hop_rap/hungria-hip-hop.jpg",
                 "play" : "Play",
                 "musicas" : [
                     "Beijo Com Trap",
@@ -119,7 +119,7 @@ const datas = [
         "songs" : [
             {
                 "cantor": "Péricles",
-                "thumb": "thumbs/pagode/pericles-acustico.webp",
+                "thumb": "./src/thumbs/pagode/pericles-acustico.webp",
                 "play" : "Play",
                 "musicas" : [
                     "Linguagem Dos Olhos",
@@ -131,7 +131,7 @@ const datas = [
             },
             {
                 "cantor": "Pixote",
-                "thumb": "thumbs/pagode/pixote-chiclete.jpg",
+                "thumb": "./src/thumbs/pagode/pixote-chiclete.jpg",
                 "play" : "Play",
                 "musicas" : [
                     "Ele E Ela",
@@ -150,7 +150,7 @@ const datas = [
         "songs" : [
             {
                 "cantor": "Nivaldo Marques",
-                "thumb": "thumbs/romantico/nivaldo-marques-pra-bailar.webp",
+                "thumb": "./src/thumbs/romantico/nivaldo-marques-pra-bailar.webp",
                 "play" : "Play",
                 "musicas" : [
                     "Tomar Uma Na Zona",
@@ -180,7 +180,7 @@ const datas = [
         "songs" : [
             {
                 "cantor": "Gusttavo Lima",
-                "thumb": "thumbs/sertanejo/butecoInBoston.jpg",
+                "thumb": "./src/thumbs/sertanejo/butecoInBoston.jpg",
                 "play" : "Play",
                 "musicas" : [
                     "O Ex da Sua Vida",
@@ -206,7 +206,7 @@ const datas = [
             },
             {
                 "cantor": "Mayara e Maraisa",
-                "thumb": "thumbs/sertanejo/maiaraeMaraisa.jpg",
+                "thumb": "./src/thumbs/sertanejo/maiaraeMaraisa.jpg",
                 "play" : "Play",
                 "musicas" : [
                     "10 (Ao Vivo em Goiânia)",
@@ -233,7 +233,7 @@ const datas = [
             },
             {
                 "cantor": "João Gomes",
-                "thumb": "thumbs/sertanejo/joao-gomes-digo-ou-nao-digo.webp",
+                "thumb": "./src/thumbs/sertanejo/joao-gomes-digo-ou-nao-digo.webp",
                 "play" : "Play",
                 "musicas" : [
                     "Digo Ou Não Digo",
@@ -256,7 +256,7 @@ const datas = [
             },
             {
                 "cantor": "Zé neto e Cristiano",
-                "thumb": "thumbs/sertanejo/zenetoeCristiano.jpg",
+                "thumb": "./src/thumbs/sertanejo/zenetoeCristiano.jpg",
                 "play" : "Play",
                 "musicas" : [
                     "VAMO TOMAR UMA - DVD Chaaama",
@@ -283,7 +283,7 @@ const datas = [
             },
             {
                 "cantor": "Zé neto e Cristiano",
-                "thumb": "thumbs/sertanejo/zenetoeCristiano.jpg",
+                "thumb": "./src/thumbs/sertanejo/zenetoeCristiano.jpg",
                 "play" : "Play",
                 "musicas" : [
                     "VAMO TOMAR UMA - DVD Chaaama",
@@ -310,7 +310,7 @@ const datas = [
             },
             {
                 "cantor": "Zé neto e Cristiano",
-                "thumb": "thumbs/sertanejo/zenetoeCristiano.jpg",
+                "thumb": "./src/thumbs/sertanejo/zenetoeCristiano.jpg",
                 "play" : "Play",
                 "musicas" : [
                     "VAMO TOMAR UMA - DVD Chaaama",
@@ -337,7 +337,7 @@ const datas = [
             },
             {
                 "cantor": "Zé neto e Cristiano",
-                "thumb": "thumbs/sertanejo/zenetoeCristiano.jpg",
+                "thumb": "./src/thumbs/sertanejo/zenetoeCristiano.jpg",
                 "play" : "Play",
                 "musicas" : [
                     "VAMO TOMAR UMA - DVD Chaaama",

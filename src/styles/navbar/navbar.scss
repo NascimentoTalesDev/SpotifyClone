@@ -1,0 +1,21 @@
+@import '../colors/colors.scss';
+@import '../mixins/mixinsColor.scss';
+
+.navbar{
+    width: 100vw;
+    @include backgroundColorGradiente;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    background-color: aqua;
+    .items{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        .item-link{
+            font-size: 1.5rem;
+            padding: 0.5rem;
+        }
+    }
+}
