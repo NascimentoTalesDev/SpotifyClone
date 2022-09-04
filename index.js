@@ -160,7 +160,7 @@ function playCd(openCd) {
 
             button.addEventListener("click", () =>{
                 let play = document.getElementById(audio[index]);
-                console.log(play);
+
                 stopMusics();
                 play.play()
             })
