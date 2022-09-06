@@ -2,15 +2,16 @@
   background-color: #121212;
   width: 100vw;
   padding: 1rem;
-  overflow-y: hidden;
-  position: absolute;
+  overflow-y: scroll;
+  position: fixed;
   z-index: 10000;
   display: none;
   top: 0;
+  height: 100%;
   left: 0;
 }
 .search .h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   margin: 1.5rem 0;
 }
 .search h2 {
@@ -26,17 +27,17 @@
 }
 .search .pesquisa input {
   width: 100%;
-  padding: 1rem 0;
-  text-indent: 2.5rem;
-  font-size: 1.3rem;
+  padding: 1.3rem 0.5rem;
+  text-indent: 4rem;
+  font-size: 2rem;
   font-weight: bold;
-  color: black;
+  color: #282828;
   border: none;
   border-radius: 0.2rem;
 }
 .search .pesquisa i {
   color: gray;
-  font-size: 1.7rem;
+  font-size: 3rem;
   left: -0.5rem;
   position: absolute;
   padding: 1rem;
