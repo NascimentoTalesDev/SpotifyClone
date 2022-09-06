@@ -174,14 +174,11 @@ function playCd(openCd) {
                 audios.forEach(audio=>{
                     audio.pause()
                     audio.currentTime = 0
-
                 })
             }
         });
     }
     
-    // console.log();
-
     body.appendChild(containerCdElement)
     containerCdElement.appendChild(down)
     containerCdElement.appendChild(up)
@@ -189,8 +186,6 @@ function playCd(openCd) {
     containerImagem.appendChild(image)
     containerCdElement.appendChild(containerMusicsElement)   
     
-
-
     down.addEventListener('click', () => {
         containerCdElement.classList.add('close')
     })       

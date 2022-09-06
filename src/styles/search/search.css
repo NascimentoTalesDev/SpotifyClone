@@ -6,6 +6,8 @@
   position: absolute;
   z-index: 10000;
   display: none;
+  top: 0;
+  left: 0;
 }
 .search .h1 {
   font-size: 2rem;
