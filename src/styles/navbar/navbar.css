@@ -14,6 +14,22 @@
   justify-content: space-around;
 }
 .navbar .items .item-link {
-  font-size: 1.5rem;
-  padding: 0.5rem;
+  width: 25%;
+}
+.navbar .items .item-link li {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: rgb(170, 170, 170);
+}
+.navbar .items .item-link li i {
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  color: rgb(170, 170, 170);
+}
+.navbar .items .item-link .active {
+  color: #ffffff;
 }/*# sourceMappingURL=navbar.css.map */
