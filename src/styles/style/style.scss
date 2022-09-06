@@ -11,7 +11,7 @@
     justify-content: space-between;
     margin: 0 0.5rem;
     .h1{
-        font-size: 2rem;
+        font-size: 2.5rem;
         padding: 10px;
         text-align: center;
         margin: 20px 0 10px 0px;
@@ -22,7 +22,7 @@
         justify-content: center;
         margin-right: 1rem;
         i{
-            font-size: 1.2rem;
+            font-size: 2rem;
             margin-left: 1rem;
         }
     }
@@ -33,12 +33,11 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    // height: 100%;
     .styleContainer{
         width: 100%;
         .style{
             padding: 10px;
-            font-size: 1rem;
+            font-size: 2rem;
         }
     }
     .collection{
@@ -46,29 +45,21 @@
         align-items: center;
         flex-direction: row;
         margin-left: 1rem;
-        margin-bottom: 10px;
         position: relative;
         overflow-x: scroll;
         overflow-y: hidden;
-        height: 20vh;
         .cdPai{
-            margin-right: 0.5rem;
+            margin-right: 0.7rem;
             height: 100%;
             border-radius: 5px;
             background-color: $backGroundColorCd;
             box-shadow: 2px 2px 2px $borderColorCd;
             .cd{
-                width: 5rem;
+                width: 10rem;
                 padding: 0.3rem;
-                height: 100%;
+                height: 20rem;
                 .image{
                     width: 100%;
-                    top: 0;
-                    left: 0;
-                    img{
-                        width: 100%;
-                        height: 100%;
-                    }
                 }
                 .paiSinger{
                     width: 100%;
@@ -77,11 +68,11 @@
                         text-align: center;
                         margin: 5px 0 5px 0;
                         width: 100%;
-                        font-size: 0.5rem;
+                        font-size: 1.3rem;
                     }
                     .play{
                         border: 1px solid;
-                        font-size: 0.7rem;
+                        font-size: 1.2rem;
                         padding: 10px;
                         margin: 2px 0 8px 0;
                         text-align: center;
@@ -102,28 +93,6 @@
                 }
             }
         }
-    }
-    .left, .right{
-        position: absolute;
-        border: 1px solid $backGroundColorArrow;
-        height: 72%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 5px;
-        margin-top: 2.6rem;
-        color: $textColorArrow;
-        background-color: $backGroundColorArrow;
-    }
-    .left:hover, .right:hover{
-        background-color: $backGroundColorArrowHover;
-        color: $textColorArrowHover;
-    }
-    .left{
-        left: 0;
-    }
-    .right{
-        right: 0;
     }
     .collection::-webkit-scrollbar{
         width: 0;
