@@ -9,58 +9,72 @@
   top: 0;
   left: 0;
   z-index: 100;
-  transition: top 0.5s ease-in-out;
+  transition: top 0.2s ease-in-out;
 }
-.containerCd i {
+.containerCd .fa-chevron-down, .containerCd .fa-chevron-up {
   position: absolute;
-  font-size: 2rem;
+  right: 0;
+  font-size: 3rem;
   padding: 1rem;
+  background: rgb(0, 255, 255);
+  background: linear-gradient(180deg, rgba(0, 253, 255, 0.5) 0%, rgb(0, 0, 0) 100%);
+}
+.containerCd .fa-chevron-up {
+  display: none;
 }
 .containerCd .image {
-  width: 15rem;
-  margin: 40px auto;
+  width: 80%;
+  margin: 5rem auto;
+  border: 1rem solid #fff;
 }
 .containerCd .image .img {
   width: 100%;
 }
 .containerCd .containerMusics {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  padding: 10px 0 20px 0;
   width: 100%;
-  margin-bottom: 10rem;
+  padding-bottom: 20rem;
 }
 .containerCd .containerMusics .button {
-  width: 80%;
-  margin: 3px auto;
-  padding: 10px;
-  color: black;
+  width: 90%;
+  margin: 0.3rem auto;
+  padding: 1rem 0 1rem 1rem;
+  color: rgb(255, 255, 255);
   text-align: left;
   border: none;
-  height: 3rem;
+  background-color: #282828;
+  font-size: 1.5rem;
   transition: scale 0.2s;
+  border-radius: 0.3rem;
 }
 .containerCd .containerMusics .button:active {
-  scale: 1.2;
+  scale: 0.98;
 }
 .containerCd .containerMusics .button:focus {
-  background-color: rgb(103, 255, 2);
+  background: rgb(0, 255, 255);
+  background: linear-gradient(180deg, rgba(0, 253, 255, 0.5) 0%, rgb(0, 0, 0) 100%);
 }
 
 .close {
-  top: 85vh;
-  height: 10vh;
+  top: 82vh;
+  height: 11vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
+  justify-content: space-around;
   align-items: center;
   position: fixed;
-  overflow-y: hidden;
-  transform: display 10s;
   z-index: 10000;
   background-color: #121212;
 }
 .close .image {
-  width: 5rem;
+  width: 6rem;
+  border: none;
+  position: fixed;
+  left: 0;
+  margin-left: 1rem;
 }
 .close .image .img {
   width: 100%;
@@ -68,9 +82,22 @@
   -webkit-animation: tocar 11110s infinite;
           animation: tocar 11110s infinite;
 }
-.close .containerMusics {
-  transform: display 10s;
+.close .fa-chevron-down {
   display: none;
+}
+.close .fa-chevron-up {
+  display: block;
+  position: fixed;
+  right: 0;
+  margin-right: 1rem;
+}
+.close .containerMusics {
+  width: 65%;
+  overflow-y: scroll;
+  position: absolute;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  top: 0;
 }
 
 @-webkit-keyframes tocar {

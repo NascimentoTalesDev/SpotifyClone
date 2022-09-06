@@ -134,9 +134,13 @@ function playCd(openCd) {
     const containerCdElement = document.createElement('div')
     containerCdElement.classList.add('containerCd')
 
-    const close = document.createElement('i')
-    close.classList.add('fas')
-    close.classList.add('fa-chevron-down')
+    const down = document.createElement('i')
+    down.classList.add('fas')
+    down.classList.add('fa-chevron-down')
+
+    const up = document.createElement('i')
+    up.classList.add('fas')
+    up.classList.add('fa-chevron-up')
 
     const containerImagem = document.createElement('div')
     containerImagem.classList.add('image')
@@ -179,13 +183,20 @@ function playCd(openCd) {
     // console.log();
 
     body.appendChild(containerCdElement)
-    containerCdElement.appendChild(close)
+    containerCdElement.appendChild(down)
+    containerCdElement.appendChild(up)
     containerCdElement.appendChild(containerImagem)
     containerImagem.appendChild(image)
     containerCdElement.appendChild(containerMusicsElement)   
     
-    close.addEventListener('click', () => {
-        containerCdElement.classList.toggle('close')
+
+
+    down.addEventListener('click', () => {
+        containerCdElement.classList.add('close')
+    })       
+
+    up.addEventListener('click', () => {
+        containerCdElement.classList.remove('close')
     })
 }
 
