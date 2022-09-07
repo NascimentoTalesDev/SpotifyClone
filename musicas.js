@@ -171,6 +171,30 @@ const datas = [
                     "Dentro De Mim",
                     "Te Amar é Bom Demais",
                 ],
+            },
+            {
+                "cantor": "Mari Fernandez",
+                "thumb": "./src/thumbs/piseiro/mari-fernandez-tente-nao-beber.webp",
+                "play" : "Play",
+                "musicas" : [
+                    "Parada Louca",
+                    "Quem Vale Menos",
+                    "Teu Amigo Cuidou",
+                    "A Maior Saudade",
+                    "Olha O Que O Amor Me Faz",
+                    "Vida Que Segue",
+                    "Você Beberia Ou Não Beberia",
+                    "Esqueça-me Se For Capaz",
+                    "De Vez Em Sempre",
+                    "Ainda Tem Sentimento",
+                    "Bebi Até Cair",
+                    "Alvejante",
+                    "Saudade Carinhosa",
+                    "É Pra Lascar O Coração",
+                    "Marionete",
+                    "Story Mentiroso"
+                    
+                ],
             }
         ]
     },

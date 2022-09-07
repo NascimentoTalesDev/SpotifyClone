@@ -82,6 +82,7 @@
                         opacity: 0.5;
                         @include backgroundColorGradiente;
                         cursor: pointer;
+                        
                     }
                     .play:active{
                         transform: scale(0.98);
