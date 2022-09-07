@@ -154,21 +154,32 @@ function playCd(openCd) {
 
     for (let index = 0; index < arrayAudios[0].length; index++) {
 
-        arrayAudios.forEach(audio => {
+
+        arrayAudios.forEach((audio) => {
             const button = document.createElement('button')
             button.classList.add('button')
             button.innerHTML = `${audio[index]} <br> ${singerName[0].innerHTML}`
             button.id = audio[index]
 
             containerMusicsElement.appendChild(button)
-
+            
             button.addEventListener("click", () =>{
                 let play = document.getElementById(audio[index]);
-
+                let currentIndex = index    
                 stopMusics();
                 play.play()
-            })
 
+                play.addEventListener('ended', () => {
+                    currentIndex++
+                    if (currentIndex >= audio.length) {
+                        stopMusics();
+                    } else {
+                        let play = document.getElementById(audio[currentIndex]);
+                        stopMusics();
+                        play.play()
+                    }
+                })
+            })
             function stopMusics() {
                 let audios = document.querySelectorAll('audio')
                 audios.forEach(audio=>{

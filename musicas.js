@@ -7,6 +7,7 @@ const datas = [
                 "thumb": "./src/thumbs/arrocha/asas-livres-pablo-e-asas-livres-retro.webp",
                 "play" : "Play",
                 "musicas" : [
+                    "Vou Te Procurar",
                     "Tudo Azul",
                     "Cristina",
                     "Vou Te Procurar",
@@ -143,6 +144,29 @@ const datas = [
                 ],
             },
             
+        ]
+    },
+    {
+        "style": "Pop",
+        "songs" : [
+            {
+                "cantor": "Olívia Rodrigo",
+                "thumb": "./src/thumbs/pop/olivia_rodrigo.jpg",
+                "play" : "Play",
+                "musicas" : [
+                    "Brutal",
+                    "Traitor",
+                    "Drivers License",
+                    "Step Forward 3 Steps Back",
+                    "Deja Vu",
+                    "Good 4 U",
+                    "Enough For You",
+                    "Happier",
+                    "Jealousy Jealousy",
+                    "Favorite Crime",
+                    "Hompe Ur Ok",
+                ],
+            },            
         ]
     },
     {
