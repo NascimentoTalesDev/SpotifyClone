@@ -73,7 +73,8 @@
 }
 .container .collection .cdPai .cd .paiSinger .play:hover {
   opacity: 0.5;
-  background-color: green;
+  background: rgb(0, 255, 255);
+  background: linear-gradient(180deg, rgba(0, 253, 255, 0.5) 0%, rgb(0, 0, 0) 100%);
   cursor: pointer;
 }
 .container .collection .cdPai .cd .paiSinger .play:active {

@@ -1,4 +1,5 @@
 @import '../colors/colors.scss';
+@import '../mixins/mixinsColor.scss';
 
 // @font-face {
 //     font-family: "Dentanx";
@@ -79,7 +80,7 @@
                     }
                     .play:hover{
                         opacity: 0.5;
-                        background-color: green;
+                        @include backgroundColorGradiente;
                         cursor: pointer;
                     }
                     .play:active{
