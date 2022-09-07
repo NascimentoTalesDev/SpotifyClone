@@ -84,6 +84,30 @@ const datas = [
                     "Furunfa Te Quero Namorar"
                 ],
             },
+            {
+                "cantor": "Wesley Safadão",
+                "thumb": "./src/thumbs/forro/wesley-safadao.webp",
+                "play" : "Play",
+                "musicas" : [
+                    "Me Supera Em Off",
+                    "Depende",
+                    "Malvada",
+                    "Soca Tudo",
+                    "Mal Feito",
+                    "Pandora",
+                    "Eu Já Tava Bem",
+                    "Formosa",
+                    "Viciada Em Paredão",
+                    "Malvadão",
+                    "Saudade No Talo",
+                    "Tu Vai Rodar",
+                    "Voz Do Paredão",
+                    "Com Choro Ou Sem Choro",
+                    "Menina Debochada",
+                    "No Chão Novinha",
+                    "Por Enquanto - Menina Veneno - Medley"
+                ],
+            },
         ]
     },
     {
@@ -193,7 +217,28 @@ const datas = [
                     "É Pra Lascar O Coração",
                     "Marionete",
                     "Story Mentiroso"
-                    
+                ],
+            },
+            {
+                "cantor": "Zé Vaqueiro",
+                "thumb": "./src/thumbs/piseiro/ze-vaqueiro-o-original.webp",
+                "play" : "Play",
+                "musicas" : [
+                    "Eu Tenho Medo",
+                    "Cangote", 
+                    "Letícia",
+                    "Forró No Interior",
+                    "Meu Mel",
+                    "Decida",
+                    "Confidencial",
+                    "Foi Amor",
+                    "Na Boca Do Litrão",
+                    "Graveto",
+                    "Só Basta Você Me Ligar",
+                    "Nem Por Um Milhão",
+                    "Matuto De Verdade",
+                    "Roxinho",
+                    "Passarinho"
                 ],
             }
         ]
