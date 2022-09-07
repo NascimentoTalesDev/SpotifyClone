@@ -3,6 +3,29 @@ const datas = [
         "style": "Arrocha",
         "songs" : [
             {
+                "cantor": "Tierry",
+                "thumb": "./src/thumbs/arrocha/tierry-acertounamosca.webp",
+                "play" : "Play",
+                "musicas" : [
+                    "Cracudo",
+                    "Acertou Na Mosca",
+                    "Tifany",
+                    "Hb20",
+                    "Hakearam-me",
+                    "Choque Térmico",
+                    "Profissional Do Amor",
+                    "Prego E Martelo",
+                    "Coração De Espelho",
+                    "Disco Arranhado",
+                    "Atestado",
+                    "Tudo Ok",
+                    "Chega Doi",
+                    "O Que É O Que É",
+                    "Chifre Em Pó",
+                    
+                ],
+            },
+            {
                 "cantor": "Pablo e Assas Livres",
                 "thumb": "./src/thumbs/arrocha/asas-livres-pablo-e-asas-livres-retro.webp",
                 "play" : "Play",
@@ -48,7 +71,6 @@ const datas = [
                     "Revoei"
                 ],
             },
-            
         ]
     },
     {
