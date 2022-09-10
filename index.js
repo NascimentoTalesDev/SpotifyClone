@@ -8,6 +8,8 @@ function init() {
 
     creatTitle()
     creatHtml.criar()
+    chooseMusic()
+
 }
 
 function creatTitle () {
@@ -38,7 +40,6 @@ function creatTitle () {
     containerfigure.appendChild(time)
     containerfigure.appendChild(config)
 
-    chooseMusic()
 
 }  
 
@@ -53,12 +54,6 @@ function chooseMusic() {
         } )
     })
 }
-
-function playCd(openCd) {
-    stopMusics()
-    start(openCd)  
-}
-
 function stopMusics() {
     let audios = document.querySelectorAll('audio')
     audios.forEach(audio=>{
@@ -67,7 +62,7 @@ function stopMusics() {
     })
 }
 
-function start(openCd) {
+function playCd(openCd) {
     
     let imagemCd = openCd[2].querySelector('img').src
     
@@ -119,8 +114,10 @@ function start(openCd) {
 
     const containerMusicsElement = document.createElement('div')
     containerMusicsElement.classList.add('containerMusics')
+    
 
     let allMusics = []
+    let allButtons = []
 
     for (let index = 0; index < arrayAudios[0].length; index++) {
 
@@ -130,23 +127,18 @@ function start(openCd) {
             button.innerHTML = `${audio[index]} <br> ${singerName[0].innerHTML}`
             button.id = audio[index]
             containerMusicsElement.appendChild(button)
-
             let music = document.getElementById(audio[index]);
             allMusics.push(music)
-            
-            
+                        
             button.addEventListener("click", () =>{
                 stopMusics();
                 music.play()
-                
+                music.addEventListener('ended', prox())
             })
             
         });
-        
-        
     }
     
-    console.log(containerMusicsElement.id);
     body.appendChild(containerCdElement)
     containerCdElement.appendChild(down)
     containerCdElement.appendChild(up)
@@ -159,10 +151,8 @@ function start(openCd) {
     containerControls.appendChild(controlsItens)
     containerCdElement.appendChild(containerControls)
     containerImagem.appendChild(image)
-    containerCdElement.appendChild(containerMusicsElement)   
-    
-    
-    
+    containerCdElement.appendChild(containerMusicsElement)
+           
     down.addEventListener('click', () => {
         containerCdElement.classList.add('close')
     })       
@@ -172,15 +162,12 @@ function start(openCd) {
     })
     playBtn.addEventListener('click', () => {
         stopMusics();
-    
-        art(allMusics)
+        
+        tocar(allMusics)
     })
-        
-        
-    // art(allMusics);
 }
 
-function art(allMusics) {
+function tocar(allMusics) {
 
     let audios = allMusics
     let currentAudio = 0
@@ -189,21 +176,19 @@ function art(allMusics) {
 
     musica.play()
     musica.addEventListener('ended',()=>{
-        console.log('acabou',musica);
-        next(currentAudio,audios)
+        prox(currentAudio,audios)
     })
 }
 
-function next(currentAudio, audios) {
+function prox(currentAudio, audios) {
     currentAudio++
     if (currentAudio > audios.length) {
-        console.log('acabaram as músicas');
         stopMusics()
     } else {
         let musica = audios[currentAudio]
         musica.play()
         musica.addEventListener('ended',()=>{
-            next(currentAudio,audios)
+            prox(currentAudio,audios)
         })
     }
     
