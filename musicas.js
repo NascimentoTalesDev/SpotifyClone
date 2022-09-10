@@ -30,7 +30,9 @@ const datas = [
                 "thumb": "./src/thumbs/arrocha/asas-livres-pablo-e-asas-livres-retro.webp",
                 "play" : "Play",
                 "musicas" : [
-                    "Vou Te Procurar",
+                    "audio1",
+                    "audio2",
+                    "audio3",
                     "Tudo Azul",
                     "Cristina",
                     "Vou Te Procurar",
@@ -77,6 +79,30 @@ const datas = [
         "style": "Forró",
         "songs" : [
             {
+                "cantor": "Wesley Safadão",
+                "thumb": "./src/thumbs/forro/wesley-safadao.webp",
+                "play" : "Play",
+                "musicas" : [
+                    "Me Supera Em Off",
+                    "Depende",
+                    "Malvada",
+                    "Soca Tudo",
+                    "Mal Feito",
+                    "Pandora",
+                    "Eu Já Tava Bem",
+                    "Formosa",
+                    "Viciada Em Paredão",
+                    "Malvadão",
+                    "Saudade No Talo",
+                    "Tu Vai Rodar",
+                    "Voz Do Paredão",
+                    "Com Choro Ou Sem Choro",
+                    "Menina Debochada",
+                    "No Chão Novinha",
+                    "Por Enquanto - Menina Veneno - Medley"
+                ],
+            },
+            {
                 "cantor": "Calcinha Preta",
                 "thumb": "./src/thumbs/forro/calcinha-preta-belem.webp",
                 "play" : "Play",
@@ -106,30 +132,7 @@ const datas = [
                     "Furunfa Te Quero Namorar"
                 ],
             },
-            {
-                "cantor": "Wesley Safadão",
-                "thumb": "./src/thumbs/forro/wesley-safadao.webp",
-                "play" : "Play",
-                "musicas" : [
-                    "Me Supera Em Off",
-                    "Depende",
-                    "Malvada",
-                    "Soca Tudo",
-                    "Mal Feito",
-                    "Pandora",
-                    "Eu Já Tava Bem",
-                    "Formosa",
-                    "Viciada Em Paredão",
-                    "Malvadão",
-                    "Saudade No Talo",
-                    "Tu Vai Rodar",
-                    "Voz Do Paredão",
-                    "Com Choro Ou Sem Choro",
-                    "Menina Debochada",
-                    "No Chão Novinha",
-                    "Por Enquanto - Menina Veneno - Medley"
-                ],
-            },
+            
         ]
     },
     {
@@ -430,5 +433,4 @@ const datas = [
             }
         ]
     }
-    
 ]
