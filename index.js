@@ -1,5 +1,5 @@
 const body = document.querySelector('body')
-body.style.overflowX = "hidden"
+// body.style.overflowX = "hidden"
 
 window.addEventListener('load',init())
 var a = []
@@ -61,8 +61,40 @@ function stopMusics() {
         audio.currentTime = 0
     })
 }
+function prox(currentAudio, audios) {
+    console.log(currentAudio, audios);
+    currentAudio++
+    if (currentAudio > audios.length) {
+        stopMusics()
+    } else {
+        let musica = audios[currentAudio]
+        musica.play()
+        musica.addEventListener('ended',()=>{
+            prox(currentAudio,audios)
+        })
+    }
+}
+function tocar(allMusics) {
+
+    let audios = allMusics
+    let currentAudio = 0
+    
+    let musica = audios[currentAudio]
+
+    musica.play()
+    musica.addEventListener('ended',()=>{
+        prox(currentAudio,audios)
+    })
+}
 
 function playCd(openCd) {
+    
+    if (window.document.querySelector('.close')) {
+        let rem = document.querySelector('div.close')
+        rem.remove()
+        stopMusics()
+    }
+    window.document.body.style.overflowY = 'hidden'
     
     let imagemCd = openCd[2].querySelector('img').src
     
@@ -75,6 +107,9 @@ function playCd(openCd) {
     const containerCdElement = document.createElement('div')
     containerCdElement.classList.add('containerCd')
     
+    const containerCdBackGround = document.createElement('div')
+    containerCdBackGround.classList.add('containerCdBackGround')
+
     const down = document.createElement('i')
     down.classList.add('fas')
     down.classList.add('fa-chevron-down')
@@ -117,7 +152,6 @@ function playCd(openCd) {
     
 
     let allMusics = []
-    let allButtons = []
 
     for (let index = 0; index < arrayAudios[0].length; index++) {
 
@@ -129,69 +163,51 @@ function playCd(openCd) {
             containerMusicsElement.appendChild(button)
             let music = document.getElementById(audio[index]);
             allMusics.push(music)
-                        
+            // let audios = allMusics
+            // let currentAudio = button
             button.addEventListener("click", () =>{
                 stopMusics();
                 music.play()
-                music.addEventListener('ended', prox())
+                // music.addEventListener('ended', tocar(currentAudio, audios))
             })
             
         });
     }
     
     body.appendChild(containerCdElement)
-    containerCdElement.appendChild(down)
-    containerCdElement.appendChild(up)
-    containerCdElement.appendChild(containerImagem)
+
+    containerCdElement.appendChild(containerCdBackGround)
+    containerCdBackGround.appendChild(down)
+    containerCdBackGround.appendChild(up)
+    containerCdBackGround.appendChild(containerImagem)
+    
     controlsItens.appendChild(prev)
     controlsItens.appendChild(pause)
     controlsItens.appendChild(playBtn)
     controlsItens.appendChild(next)
+
     
+    containerCdBackGround.appendChild(containerControls)
     containerControls.appendChild(controlsItens)
-    containerCdElement.appendChild(containerControls)
     containerImagem.appendChild(image)
     containerCdElement.appendChild(containerMusicsElement)
+    containerCdBackGround.style.backgroundImage = `url('${imagemCd}')`;
            
     down.addEventListener('click', () => {
         containerCdElement.classList.add('close')
+        window.document.body.style.overflowY = 'scroll'
     })       
     
     up.addEventListener('click', () => {
         containerCdElement.classList.remove('close')
     })
+
     playBtn.addEventListener('click', () => {
         stopMusics();
-        
         tocar(allMusics)
     })
-}
 
-function tocar(allMusics) {
-
-    let audios = allMusics
-    let currentAudio = 0
-    
-    let musica = audios[currentAudio]
-
-    musica.play()
-    musica.addEventListener('ended',()=>{
-        prox(currentAudio,audios)
-    })
-}
-
-function prox(currentAudio, audios) {
-    currentAudio++
-    if (currentAudio > audios.length) {
-        stopMusics()
-    } else {
-        let musica = audios[currentAudio]
-        musica.play()
-        musica.addEventListener('ended',()=>{
-            prox(currentAudio,audios)
-        })
-    }
-    
+    tocar(allMusics)
 }
 
 let search = document.getElementById('search')

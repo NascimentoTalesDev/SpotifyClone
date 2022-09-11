@@ -3,7 +3,6 @@
 
 
 .containerCd{
-    background-color: $backGroundColor;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -12,57 +11,81 @@
     height: 100%;
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: 1000;
     transition: top 0.2s ease-in-out;
-
-    .fa-chevron-down, .fa-chevron-up{
-        position: absolute;
-        right: 0;
-        font-size: 3rem;
-        padding: 1rem;
-        @include backgroundColorGradiente;
-    }
-    .fa-chevron-up{
-        display: none;
-    }
-    .image{
-        width: 80%;
-        margin: 5rem auto 4rem auto;
-        border: 1rem solid #fff;
-        .img{
-            width: 100%;
-        }
-    }
-    .containerControls{
+    .containerCdBackGround{
         width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 3rem;
-        .controlsItens{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-around;
-            width: 50%;
-            i{
-                font-size: 3rem;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 100vh;
+        top: 0;
+        height: 100%;
+        // z-index: 10000;
+        .fa-chevron-down, .fa-chevron-up{
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 3rem;
+            padding: 1rem;
+            @include backgroundColorGradiente;
+            z-index: 1;
+        }
+        .fa-chevron-up{
+            display: none;
+        }
+        .image{
+            display: none;
+          
+            .img{
             }
         }
-    
+        .containerControls{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            z-index: 1;
+            margin-top: -20rem;
+            .controlsItens{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                width: 50%;
+                i{
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+    .containerCdBackGround::after{
+        content: '';
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.593);
+        top: 0;
+        left: 0;
+        position: absolute;
+        // z-index: 10;
+        // position: fixed;
     }
     .containerMusics{
+        background-color: $backGroundColor;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         width: 100%;
-        padding-bottom: 20rem;
+        padding-top: 1rem;
+        padding-bottom: 10rem;
+        // z-index: 10000;
         .button{
             width: 90%;
             margin: 0.3rem auto;
-            padding: 1rem 0 1rem 1rem;
+            padding: 2rem 0 2rem 1rem;
             color: rgb(255, 255, 255);
             text-align: left;
             border: none;
@@ -80,44 +103,58 @@
     }
 }
 .close{
-    top: 82vh  ;
-    height: 11vh;
+    top: 85vh;
+    height: 8rem;
     display: flex;
-    flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
     position: fixed;
     z-index: 10000;
     background-color: $backGroundColor;
-    .image{
-        width: 6rem;
-        border: none;
-        position: fixed;
-        left: 0;
-        margin-left: 1rem;
-        .img{
-            width: 100%;
-            border-radius: 50%;
-            animation: tocar 11110s infinite;
+    overflow: hidden;
+    .containerCdBackGround{
+        height: 10rem;
+        overflow: none;
+        padding: 0;
+        .image{
+            display: flex;
+            position: absolute;
+            margin-left: 2rem;
+            width: 8rem;
+            .img{
+                width: 100%;
+                border-radius: 50%;
+                animation: tocar 11110s infinite;
+            }
         }
+        .fa-chevron-down{
+            display: none;
+        }
+        .fa-chevron-up{
+            display: flex;
+            position: absolute;
+            right: 0;
+            margin-top: 1.5rem;
+            margin-right: 1rem;
+        }
+        .containerControls{
+            display: none;
+        }
+        
     }
-    .fa-chevron-down{
+    .containerCdBackGround::after{
         display: none;
     }
-    .fa-chevron-up{
-        display: block;
-        position: fixed;
-        right: 0;
-        margin-right: 1rem;
-    }
     .containerMusics{
-        width: 65%;
-        overflow-y: scroll;
-        position: absolute;
-        padding-bottom: 2rem;
-        padding-top: 2rem;
-        top: 0;
-    }    
+        display: none;
+        // width: 50%;
+        // position: absolute;
+        // overflow-y: scroll;
+        .button{
+          
+        }
+    }  
+    
 }
 @keyframes tocar {
     0%{
