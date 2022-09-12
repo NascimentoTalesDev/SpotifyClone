@@ -156,19 +156,61 @@ function playCd(openCd) {
     for (let index = 0; index < arrayAudios[0].length; index++) {
 
         arrayAudios.forEach((audio) => {
-            const button = document.createElement('button')
-            button.classList.add('button')
-            button.innerHTML = `${audio[index]} <br> ${singerName[0].innerHTML}`
-            button.id = audio[index]
-            containerMusicsElement.appendChild(button)
+            const section = document.createElement('section')
+            section.classList.add('section')
+
+            const capa = document.createElement('img')
+            capa.classList.add('capa')
+
+            const div = document.createElement('div')
+            div.classList.add('div')
+
+            const h2 = document.createElement('h2')
+            h2.classList.add('h2')
+
+            const singer = document.createElement('h3')
+            singer.classList.add('singer')
+
+            capa.src = imagemCd
+
+            h2.innerHTML = audio[index]
+            singer.innerHTML = singerName[0].innerHTML
+
+            h2.id = audio[index]
+
+            const div2 = document.createElement('div')
+            div2.classList.add('div2')
+
+            const like = document.createElement('i')
+            like.classList.add('fa-regular')
+            like.classList.add('fa-heart')
+
+            const like2 = document.createElement('i')
+            like2.innerHTML = '<i class="fas fa-circle-minus"></i>'
+            
+            const like3 = document.createElement('i')
+            like3.innerHTML = '<i class="fas fa-ellipsis-vertical"></i>'
+   
+            div.appendChild(h2)
+            div.appendChild(singer)
+                     
+            div2.appendChild(like)
+            div2.appendChild(like2)
+            div2.appendChild(like3)
+
+            section.appendChild(capa)
+            section.appendChild(div)
+            section.appendChild(div2)
+            containerMusicsElement.appendChild(section)
+
             let music = document.getElementById(audio[index]);
             allMusics.push(music)
             // let audios = allMusics
-            // let currentAudio = button
-            button.addEventListener("click", () =>{
+            // let currentAudio = h2
+            section.addEventListener("click", () =>{
                 stopMusics();
                 music.play()
-                // music.addEventListener('ended', tocar(currentAudio, audios))
+                music.addEventListener('ended', prox())
             })
             
         });
