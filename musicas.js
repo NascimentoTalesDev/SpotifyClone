@@ -297,6 +297,27 @@ const datas = [
                     "Ta Rocheda"
                 ],
             }
+            ,
+            {
+                "cantor": "Tarcísio Do Acordeon",
+                "thumb": "./src/thumbs/piseiro/tarcisio-do-acordeon.webp",
+                "play" : "Play",
+                "musicas" : [
+                    "Eu Tô Aí",
+                    "Me Esqueca Se Puder",
+                    "Amor Reserva",
+                    "Eu Gosto É De Problema",
+                    "Imaturidade",
+                    "Proteção De Tela",
+                    "Coleção De Otário",
+                    "Meu Sonho",
+                    "A Dor Mais Doida",
+                    "Eu Tenho A Senha",
+                    "Tem Que Ser Agora",
+                    "Hoje Doi",
+                    "Vaqueiro Ferido"
+                ],
+            }
         ]
     },
     {
@@ -460,6 +481,38 @@ const datas = [
                     "Pior Dos Piores",
                     "Vida Noturna",
                     "Você Não Merece"
+                ],
+            }
+        ]
+    },
+    {
+        "style": "Vaquejada",
+        "songs" : [
+            {
+                "cantor": "Gusttavo Lima",
+                "thumb": "./src/thumbs/vaquejada/amado-edilson.jpeg",
+                "play" : "Play",
+                "musicas" : [
+                    "Couro De Boi",
+                    "A Mulher Da Blusa Amarela",
+                    "Minha Mulher É Aquela",
+                    "Último Adeus De Um Vaqueiro",
+                    "A Mulher Que Mais Amei",
+                    "Nunca Mais Vi Minha Amada",
+                    "Resposta Da Blusa Amarela",
+                    "A Culpa Foi Toda Dela",
+                    "Serenata Da Montanha",
+                    "Jovem Abandonado",
+                    "Mulher Completa",
+                    "Dono Dela Sou Eu",
+                    "Gosto Detudo Que Ela Faz",
+                    "Mulher Do Cachaceiro",
+                    "Coqueiro Da Bahia",
+                    "Resposta Mulher Casada",
+                    "Paixão Não Mata Ninguém",
+                    "Cajueiro",
+                    "A Distância",
+                    "Mulher Bandida"
                 ],
             }
         ]
