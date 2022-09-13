@@ -133,8 +133,10 @@ body {
   text-align: left;
 }
 .containerCd .containerMusics .section .div .singer {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 100;
+  margin-left: 0.2rem;
+  margin-top: 0.5rem;
 }
 .containerCd .containerMusics .section .div2 {
   display: flex;
