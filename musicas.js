@@ -104,6 +104,34 @@ const datas = [
             },
             {
                 "cantor": "Calcinha Preta",
+                "thumb": "./src/thumbs/forro/rafinha-big-love.webp",
+                "play" : "Play",
+                "musicas" : [
+                    "Meu Amor É Seu",
+                    "Proteção De Tela",
+                    "Aquelas Coisas",
+                    "Superação Digital",
+                    "Cena De Amor",
+                    "Outra Vida",
+                    "Você Beberia Ou Não Beberia",
+                    "Diferente Das Diferentes",
+                    "Chega E Senta",
+                    "Se For Amor",
+                    "Termina Comigo",
+                    "Horizonte Azul",
+                    "Larga Dessa Bad",
+                    "Tô Com Saudade",
+                    "O Processo É Natural",
+                    "Eu Tô Aí",
+                    "Dona De Mim",
+                    "Rolê",
+                    "Imaturidade",
+                    "Máquina Zero",
+                    "Não Acaba Não"
+                ],
+            },
+            {
+                "cantor": "Calcinha Preta",
                 "thumb": "./src/thumbs/forro/calcinha-preta-belem.webp",
                 "play" : "Play",
                 "musicas" : [
@@ -131,7 +159,7 @@ const datas = [
                     "Fica Comigo",
                     "Furunfa Te Quero Namorar"
                 ],
-            },
+            }
             
         ]
     },
