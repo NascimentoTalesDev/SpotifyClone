@@ -30,9 +30,6 @@ const datas = [
                 "thumb": "./src/thumbs/arrocha/asas-livres-pablo-e-asas-livres-retro.webp",
                 "play" : "Play",
                 "musicas" : [
-                    "audio1",
-                    "audio2",
-                    "audio3",
                     "Tudo Azul",
                     "Cristina",
                     "Vou Te Procurar",
@@ -188,6 +185,42 @@ const datas = [
                     "Apaga A Luz",
                     "Cama De Casal",
                     "Insônia"
+                ],
+            },
+            {
+                "cantor": "Poesia Acústica",
+                "thumb": "./src/thumbs/hip hop_rap/poesia-acustica.jpg",
+                "play" : "Play",
+                "musicas" : [
+                    "1 - Descompasso Do Compasso",
+                    "2 - Sobre Nós",
+                    "3 - Capricorniana",
+                    "4 - Todo Mundo Odéia Acústico",
+                    "5 - Teu Popô",
+                    "6 - Era Uma Vez",
+                    "7 - Céu Azul",
+                    "8 - Amor E Samba",
+                    "9 - Melhor Forma",
+                    "10 - Recomeçar",
+                    "11 - Nada Mudou",
+                    "12 - Pra Sempre"
+                ],
+            },
+            {
+                "cantor": "Tribo Da Periferia",
+                "thumb": "./src/thumbs/hip hop_rap/tribo-da-periferia.webp",
+                "play" : "Play",
+                "musicas" : [
+                    "Cegonha",
+                    "Tema",
+                    "Dia De Poderoso",
+                    "Gelo E Gin",
+                    "Rolê Sagrado",
+                    "Segunda Noite",
+                    "Festival De Nós Dois",
+                    "O Retorno E Lei",
+                    "Fechamento De Sempre",
+                    "Resiliência"
                 ],
             },
         ]
