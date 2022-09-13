@@ -72,6 +72,20 @@ const datas = [
         ]
     },
     {
+        "style": "Brega Funk",
+        "songs" : [
+            {
+                "cantor": "Zé Felipe",
+                "thumb": "./src/thumbs/bregafunk/zefelipe.jpg",
+                "play" : "Play",
+                "musicas" : [
+                    "Malvada - ZF",
+                    "Senta Danada - ZF"
+                ],
+            },
+        ]
+    },
+    {
         "style": "Forró",
         "songs" : [
             {
@@ -437,6 +451,79 @@ const datas = [
         "style": "Sertanejo",
         "songs" : [
             {
+                "cantor": "Cleber & Cauan",
+                "thumb": "./src/thumbs/sertanejo/cleberecauan.jpg",
+                "play" : "Play",
+                "musicas" : [
+                    "Ta Namorando - C&C"
+                ],
+            },
+            {
+                "cantor": "George Henrique E Rodrigo",
+                "thumb": "./src/thumbs/sertanejo/georgeHenrique-e-rodrigo.jpg",
+                "play" : "Play",
+                "musicas" : [
+                    "Vai Lá Em Casa Hoje - GH&R"
+                ],
+            },
+            {
+                "cantor": "Guilherme E Benuto",
+                "thumb": "./src/thumbs/sertanejo/guilhermeebenuto.jpg",
+                "play" : "Play",
+                "musicas" : [
+                    "Haja Colírio - G&B"
+                ],
+            },
+            {
+                "cantor": "Hugo E Guilherme",
+                "thumb": "./src/thumbs/sertanejo/hugoegui.webp",
+                "play" : "Play",
+                "musicas" : [
+                    "Mal Feito - H&G",
+                    "Meu Número - H&G"
+                ],
+            },
+            {
+                "cantor": "Jorge E Mateus",
+                "thumb": "./src/thumbs/sertanejo/jorgeemath.jpg",
+                "play" : "Play",
+                "musicas" : [
+                    "Molhando O Volante - J&M"
+                ],
+            },
+            {
+                "cantor": "Luan Santana",
+                "thumb": "./src/thumbs/sertanejo/luan.jpeg",
+                "play" : "Play",
+                "musicas" : [
+                    "Coração Cigano - LS"
+                ],
+            },
+            {
+                "cantor": "Matheus Fernandes",
+                "thumb": "./src/thumbs/sertanejo/matheusfernandes.jpg",
+                "play" : "Play",
+                "musicas" : [
+                    "Balanço Da Rede - MF"
+                ],
+            },
+            {
+                "cantor": "Murilo Huff",
+                "thumb": "./src/thumbs/sertanejo/muriloruff.jpg",
+                "play" : "Play",
+                "musicas" : [
+                    "Perfeito Pra Ficar Sozinho - MH"
+                ],
+            },
+            {
+                "cantor": "Simone E Simaria",
+                "thumb": "./src/thumbs/sertanejo/simoneeSimaria.jpeg",
+                "play" : "Play",
+                "musicas" : [
+                    "Vontade De Morder - S&S"
+                ],
+            },
+            {
                 "cantor": "Gusttavo Lima",
                 "thumb": "./src/thumbs/sertanejo/butecoInBoston.jpg",
                 "play" : "Play",
@@ -467,26 +554,28 @@ const datas = [
                 "thumb": "./src/thumbs/sertanejo/henrique-juliano-menos-e-mais.jpg",
                 "play" : "Play",
                 "musicas" : [
-                    "Três Corações",
-                    "Se Joga Na Minha Vida",
-                    "Metade Da Estrada",
-                    "Quem pegou Pegou",
-                    "Palmas Pro Amor",
-                    "Quando Você Vem",
-                    "Sala De Espera",
-                    "Menos É Mais",
-                    "Rua Recaída",
-                    "Lembrança Boa",
-                    "Completa Aí",
-                    "Beijadamente Calculado",
-                    "Arruma Um Cantinho",
-                    "Desbeijar Minha Boca",
-                    "Fim Ou Intervalo",
-                    "Vai Que Bebereis",
-                    "Granada",
-                    "Cidade Vizinha",
-                    "Garrafas Vazias",
-                    "Eu E A Saudade"
+                    "Até A Proxima Vida - H&J",
+                    "Seu Perfil - H&J",
+                    "Três Corações - H&J",
+                    "Se Joga Na Minha Vida - H&J",
+                    "Metade Da Estrada - H&J",
+                    "Quem pegou Pegou - H&J",
+                    "Palmas Pro Amor - H&J",
+                    "Quando Você Vem - H&J",
+                    "Sala De Espera - H&J",
+                    "Menos É Mais - H&J",
+                    "Rua Recaída - H&J",
+                    "Lembrança Boa - H&J",
+                    "Completa Aí - H&J",
+                    "Beijadamente Calculado - H&J",
+                    "Arruma Um Cantinho - H&J",
+                    "Desbeijar Minha Boca - H&J",
+                    "Fim Ou Intervalo - H&J",
+                    "Vai Que Bebereis - H&J",
+                    "Granada - H&J",
+                    "Cidade Vizinha - H&J",
+                    "Garrafas Vazias - H&J",
+                    "Eu E A Saudade - H&J"
                 ],
             },
             {
