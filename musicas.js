@@ -75,6 +75,14 @@ const datas = [
         "style": "Brega Funk",
         "songs" : [
             {
+                "cantor": "Rogerinho",
+                "thumb": "./src/thumbs/bregafunk/rogerinho.jpg",
+                "play" : "Play",
+                "musicas" : [
+                    "Tchuco Nela - R"
+                ],
+            },
+            {
                 "cantor": "Zé Felipe",
                 "thumb": "./src/thumbs/bregafunk/zefelipe.jpg",
                 "play" : "Play",
@@ -82,7 +90,7 @@ const datas = [
                     "Malvada - ZF",
                     "Senta Danada - ZF"
                 ],
-            },
+            }
         ]
     },
     {
