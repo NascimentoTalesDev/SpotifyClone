@@ -40,7 +40,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 85vh;
+  padding-top: 77vh;
   top: 0;
   height: 100%;
 }
@@ -82,7 +82,7 @@ body {
 }
 .containerCd .containerCdBackGround::after {
   content: "";
-  height: 85.5vh;
+  height: 77.5vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.593);
   top: 0;
@@ -206,6 +206,7 @@ body {
 .close .containerMusics {
   display: none;
 }
+
 @-webkit-keyframes tocar {
   0% {
     transform: rotate(0);
@@ -214,6 +215,7 @@ body {
     transform: rotate(3585660deg);
   }
 }
+
 @keyframes tocar {
   0% {
     transform: rotate(0);

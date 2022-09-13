@@ -265,6 +265,37 @@ const datas = [
                     "Roxinho",
                     "Passarinho"
                 ],
+            },
+            {
+                "cantor": "Barões Da Pisadinha",
+                "thumb": "./src/thumbs/piseiro/os-baroes-da-pisadinha-2020.webp",
+                "play" : "Play",
+                "musicas" : [
+                    "Batom De Ouro",
+                    "Galera Do Interior",
+                    "Dançar Forró Beijando",
+                    "Chupadinha",
+                    "Desce Do Cavalo",
+                    "Já Que Me Ensinou A Beber",
+                    "Mamãe Que É Mamãe",
+                    "Quem Me Colocou Pra Beber",
+                    "O Piseiro Xtourou",
+                    "Status",
+                    "Com Ele É Cinema Comigo É Cama",
+                    "Investe Em Mim",
+                    "O Matuto Se Apaixonou",
+                    "O Povo Gosta É Do Piseiro",
+                    "Bumbum No Paredão",
+                    "Vem Me Amar",
+                    "Paredão Loló",
+                    "Era Eu",
+                    "Meu Forró",
+                    "Bebezinha",
+                    "Eu O Meu Cavalo E Ela",
+                    "Monta Logo Vai",
+                    "Mente Milionária",
+                    "Ta Rocheda"
+                ],
             }
         ]
     },
@@ -400,7 +431,7 @@ const datas = [
                     "Oi Sumido",
                     "Quase Tudo",
                     "Se Olha No Espelho part. Cristiano Araújo",
-                    "Traí sim part. Zé Neto e Cristiano",
+                    "Traí sim part Zé Neto e Cristiano",
                     "Separada"
                 ],
             },

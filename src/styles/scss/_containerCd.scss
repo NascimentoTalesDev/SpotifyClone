@@ -14,7 +14,7 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        padding-top: 85vh;
+        padding-top: 77vh;
         top: 0;
         height: 100%;
         // z-index: 10000;
@@ -32,9 +32,6 @@
         }
         .image{
             display: none;
-          
-            .img{
-            }
         }
         .containerControls{
             width: 100%;
@@ -59,7 +56,7 @@
     }
     .containerCdBackGround::after{
         content: '';
-        height: 85.5vh;
+        height: 77.5vh;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.593);
         top: 0;
@@ -73,11 +70,9 @@
         justify-content: center;
         flex-direction: column;
         width: 100%;
-        // margin-top: -200px;
         padding-top: 1rem;
         padding-bottom: 10rem;
         z-index: 100;
-        
         .section{
             background-color: $backGroundColorCd;
             width: 98%;
@@ -111,9 +106,7 @@
                 .singer{
                     font-size: 1.2rem;
                     font-weight: 100;
-
                 }
-                
             }
             .div2{
                 display: flex;
@@ -129,12 +122,7 @@
                     font-size: 2.5rem;
                     margin-left: 0.8rem;
                 }
-                // i:first-child{
-                //     margin-left: 0;
-                // }
             }
-            
-            
         }
         .section:active{
             scale: (0.98);
@@ -142,8 +130,6 @@
         .section:focus{
             @include backgroundColorGradiente;
         }
-
-
     }
 }
 .close{
@@ -184,21 +170,13 @@
         .containerControls{
             display: none;
         }
-        
     }
     .containerCdBackGround::after{
         display: none;
     }
     .containerMusics{
         display: none;
-        // width: 50%;
-        // position: absolute;
-        // overflow-y: scroll;
-        .button{
-          
-        }
     }  
-    
 }
 @keyframes tocar {
     0%{
