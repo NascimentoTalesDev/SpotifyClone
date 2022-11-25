@@ -131,6 +131,9 @@
         .section:focus{
             @include backgroundColorGradiente;
         }
+        .section:hover{
+            cursor: pointer;
+        }
     }
 }
 .close{

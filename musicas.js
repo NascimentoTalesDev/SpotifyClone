@@ -426,6 +426,27 @@ const datas = [
         ]
     },
     {
+        "style": "Rock",
+        "songs" : [
+            {
+                "cantor": "Cold Play",
+                "thumb": "./src/thumbs/rock/coldplay.png",
+                "play" : "Play",
+                "musicas" : [
+                    "Magic - ColdPlay",
+                    "Paradise - ColdPlay",
+                    "A Sky Full Of Stars - ColdPlay",
+                    "Chainsmokers & Something Just Like This - ColdPlay",
+                    "Hymn For The Weekend - ColdPlay",
+                    "Viva La Vida - ColdPlay",
+                    "Clocks - ColdPlay",
+                    "The Scientist - ColdPlay",
+                    "Coldplay Ft Beyonce Hymn For The Weekend Ash Remix - ColdPlay"
+                ],
+            },            
+        ]
+    },
+    {
         "style": "Romântico",
         "songs" : [
             {
