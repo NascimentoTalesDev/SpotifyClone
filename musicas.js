@@ -430,20 +430,28 @@ const datas = [
         "songs" : [
             {
                 "cantor": "Cold Play",
-                "thumb": "./src/thumbs/rock/coldplay.png",
+                "thumb": "./src/thumbs/rock/ColdPlay.jpeg",
                 "play" : "Play",
                 "musicas" : [
+                    "Clocks - ColdPlay",
+                    "Viva La Vida - ColdPlay",
+                    "The Scientist - ColdPlay",
                     "Magic - ColdPlay",
                     "Paradise - ColdPlay",
+                    "Hymn For The Weekend - ColdPlay",
                     "A Sky Full Of Stars - ColdPlay",
                     "Chainsmokers & Something Just Like This - ColdPlay",
-                    "Hymn For The Weekend - ColdPlay",
-                    "Viva La Vida - ColdPlay",
-                    "Clocks - ColdPlay",
-                    "The Scientist - ColdPlay",
                     "Coldplay Ft Beyonce Hymn For The Weekend Ash Remix - ColdPlay"
                 ],
-            },            
+            }, 
+            {
+                "cantor": "Twenty One Pilots",
+                "thumb": "./src/thumbs/rock/TwentyOnePilots.jpg",
+                "play" : "Play",
+                "musicas" : [
+                    "Stressed Out - TOP"
+                ],
+            },           
         ]
     },
     {
